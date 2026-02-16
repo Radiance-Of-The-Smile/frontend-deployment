@@ -52,7 +52,7 @@ const Dashboard = ({ api }) => {
       
       {/* <input type="file" onChange={handleFileChange} className="file-input" /> */}
       {!selectedFile && (
-        <p style={{"display":"flex", "justify-content": "center"}}>Please Upload a Panoramic Dental X-ray to get diagnosis</p>
+        <div><p style={{"display":"flex", "justify-content": "center"}}>Please Upload a Panoramic Dental X-ray to get diagnosis</p></div>
         <div style={{"display":"flex", "justify-content": "center"}}>
           <input
             type="file"
