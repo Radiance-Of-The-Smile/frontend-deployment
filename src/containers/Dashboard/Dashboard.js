@@ -61,7 +61,7 @@ const Dashboard = ({ api }) => {
             style={{ display: 'none' }} // Hidden input
             accept=".jpg, .jpeg, .png"
           />
-          <button className="custom-file-upload" onClick={handleButtonClick}>
+          <button className="custom-file-upload" onClick={handleButtonClick} title = "Upload Panoramic dental X-ray">
             Upload Image
           </button>
         </div>
@@ -77,6 +77,7 @@ const Dashboard = ({ api }) => {
               <button style={{"background-color": "#aa0000"}} onClick={handleRemoveImage} className="remove-button">Delete</button>
             </div>
           )}
+           <p style="display: flex; justify-content: center;">Please Upload a Panoramic Dental X-ray to get diagnosis</p>
           {loading && <div className="loading">Processing...</div>}
           {processedImage && (
             <div>
