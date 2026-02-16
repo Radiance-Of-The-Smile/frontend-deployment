@@ -77,7 +77,7 @@ const Dashboard = ({ api }) => {
               <button style={{"background-color": "#aa0000"}} onClick={handleRemoveImage} className="remove-button">Delete</button>
             </div>
           )}
-           <p style="display: flex; justify-content: center;">Please Upload a Panoramic Dental X-ray to get diagnosis</p>
+           <p style={{"display: flex; justify-content: center;"}}>Please Upload a Panoramic Dental X-ray to get diagnosis</p>
           {loading && <div className="loading">Processing...</div>}
           {processedImage && (
             <div>
